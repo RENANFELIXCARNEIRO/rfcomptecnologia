@@ -247,16 +247,30 @@ function App() {
           <div className="flex items-center justify-center mb-12">
             <Monitor className="h-8 w-8 text-cyan-400 mr-3" />
             <p className="text-lg text-slate-300 text-center">
-              Confira alguns dos PCs gamer que já montamos para nossos clientes
+              Confira nossos PCs gamer disponíveis na OLX
             </p>
+          </div>
+          <div className="text-center mb-8">
+            <a
+              href="https://www.olx.com.br/perfil/renan-felix-6ab2f56f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+            >
+              <Monitor className="h-5 w-5" />
+              Ver Todos os PCs na OLX
+              <ExternalLink className="h-4 w-4" />
+            </a>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {pcPortfolio.map((pc) => (
-              <div 
+              <a
                 key={pc.id}
-                className="group cursor-pointer"
-                onClick={() => setSelectedImage(pc)}
+                href="https://www.olx.com.br/perfil/renan-felix-6ab2f56f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group cursor-pointer block"
               >
                 <div className="relative overflow-hidden rounded-lg bg-slate-800/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300">
                   <img 
@@ -270,7 +284,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
