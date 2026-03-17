@@ -323,6 +323,13 @@ function App() {
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Sobre a RFComp
           </h2>
+          <div className="flex justify-center mb-8">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/rfcomp_mascote-removebg-preview_9e2ee7bd.png" 
+              alt="Mascote RFComp" 
+              className="h-48 w-auto animate-bounce"
+            />
+          </div>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-slate-300 mb-6">
               Na busca pela experiência de jogo definitiva, cada componente importa. É por isso que nos dedicamos a montar PCs gamer 
@@ -332,7 +339,7 @@ function App() {
               Nosso compromisso é com a excelência, utilizando apenas peças de qualidade comprovada e das marcas mais renomadas do mercado, 
               garantindo durabilidade, desempenho e estabilidade para suas sessões de jogo mais intensas.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
               <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-300 border-cyan-500/30">
                 Qualidade Garantida
               </Badge>
