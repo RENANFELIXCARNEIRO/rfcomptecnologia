@@ -147,45 +147,45 @@ function App() {
             <Card className="bg-slate-800/50 border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center space-x-3 mb-2">
-                  <Cpu className="h-8 w-8 text-cyan-400" />
-                  <CardTitle className="text-cyan-300">Processadores Intel</CardTitle>
+                  <Monitor className="h-8 w-8 text-cyan-400" />
+                  <CardTitle className="text-cyan-300">Montagem Personalizada</CardTitle>
                 </div>
                 <CardDescription className="text-slate-400">
-                  Alto desempenho em jogos e excelente performance em tarefas de núcleo único
+                  PCs gamer sob encomenda
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-slate-300">
-                <p>Ideais para gamers que buscam a máxima taxa de quadros e fluidez em seus títulos favoritos. Com tecnologias avançadas e frequências de clock elevadas.</p>
+                <p>Construa o PC dos seus sonhos! Escolha processador, placa-mãe, memória, armazenamento e muito mais. Cada máquina é montada com precisão e testada para desempenho máximo.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-800/50 border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center space-x-3 mb-2">
-                  <Zap className="h-8 w-8 text-purple-400" />
-                  <CardTitle className="text-purple-300">Processadores AMD</CardTitle>
+                  <Package className="h-8 w-8 text-purple-400" />
+                  <CardTitle className="text-purple-300">Venda de Componentes</CardTitle>
                 </div>
                 <CardDescription className="text-slate-400">
-                  Versatilidade e excelente custo-benefício com grande número de núcleos
+                  Peças de qualidade com preços competitivos
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-slate-300">
-                <p>Perfeitos para jogos, multitarefas, streaming e criação de conteúdo. Desempenho excepcional em diversas aplicações simultâneas.</p>
+                <p>Processadores, placas-mãe, RAM, SSDs, fontes, coolers e muito mais. Todos os componentes são testados e vem com garantia. Confira nosso catálogo na OLX.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-800/50 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center space-x-3 mb-2">
-                  <Settings className="h-8 w-8 text-blue-400" />
-                  <CardTitle className="text-blue-300">Processadores Xeon</CardTitle>
+                  <Shield className="h-8 w-8 text-blue-400" />
+                  <CardTitle className="text-blue-300">Suporte Técnico</CardTitle>
                 </div>
                 <CardDescription className="text-slate-400">
-                  Excelente custo-benefício para configurações de entrada e intermediárias
+                  Consultoria e suporte pós-venda
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-slate-300">
-                <p>Grande número de núcleos a preço acessível. Robustos para multitarefas e aplicações que se beneficiam de muitos núcleos.</p>
+                <p>Tire suas dúvidas sobre especificações, compatibilidade de componentes e performance. Oferecemos consultoria técnica para ajudar na melhor escolha.</p>
               </CardContent>
             </Card>
           </div>
