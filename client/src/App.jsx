@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor } from 'lucide-react'
+import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink } from 'lucide-react'
 import rfcompLogo from './assets/rfcomp-logo.png'
 import pc1 from './assets/IMG-20250630-WA0037.jpg'
 import pc2 from './assets/IMG-20250630-WA0039.jpg'
@@ -89,6 +89,12 @@ function App() {
               className="text-cyan-300 hover:text-cyan-100 transition-colors"
             >
               Contato
+            </button>
+            <button 
+              onClick={() => scrollToSection('parts')}
+              className="text-cyan-300 hover:text-cyan-100 transition-colors"
+            >
+              Peças
             </button>
           </nav>
         </div>
@@ -323,6 +329,62 @@ function App() {
                 Suporte Técnico
               </Badge>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Parts Section */}
+      <section id="parts" className="py-16 px-4 bg-slate-900/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Venda de Peças
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+            <Card className="bg-slate-800/50 border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-2">
+                  <Package className="h-8 w-8 text-cyan-400" />
+                  <CardTitle className="text-cyan-300">Componentes de Qualidade</CardTitle>
+                </div>
+                <CardDescription className="text-slate-400">
+                  Peças novas e seminovas para seu PC
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-slate-300">
+                <p>Processadores, placas-mãe, memória RAM, SSDs, fontes, coolers e muito mais. Todos os componentes são testados e vêm com garantia.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-800/50 border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-2">
+                  <Star className="h-8 w-8 text-purple-400" />
+                  <CardTitle className="text-purple-300">Preços Competitivos</CardTitle>
+                </div>
+                <CardDescription className="text-slate-400">
+                  Melhor custo-benefício do mercado
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-slate-300">
+                <p>Oferecemos peças com os melhores preços da região, sem comprometer a qualidade. Consulte nosso catálogo na OLX.</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-slate-300 mb-6 max-w-2xl mx-auto">
+              Confira nosso catálogo completo de peças na OLX. Temos uma grande variedade de componentes para montar ou atualizar seu PC gamer.
+            </p>
+            <a
+              href="https://www.olx.com.br/perfil/renan-felix-6ab2f56f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+            >
+              <Package className="h-5 w-5" />
+              Ver Peças na OLX
+              <ExternalLink className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </section>
