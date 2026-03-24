@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink } from 'lucide-react'
-import rfcompLogo from './assets/rfcomp-logo.png'
 import pc1 from './assets/IMG-20250630-WA0037.jpg'
 import pc2 from './assets/IMG-20250630-WA0039.jpg'
 import pc3 from './assets/IMG-20250630-WA0040.jpg'
@@ -20,6 +19,8 @@ import pc13 from './assets/IMG-20250630-WA0050.jpg'
 import pc14 from './assets/IMG-20250630-WA0051.jpg'
 import pc15 from './assets/pc-portfolio-15.jpg'
 import './App.css'
+
+const rfcompLogo = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/LogoRfcomp_bbbf7b9b.png'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
