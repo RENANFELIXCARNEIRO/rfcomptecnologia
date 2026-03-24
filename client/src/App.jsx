@@ -332,7 +332,7 @@ function App() {
                   A RFComp e uma empresa especializada na venda de computadores e pecas, criada com o objetivo de oferecer produtos de qualidade com preco acessivel e um atendimento realmente diferenciado.
                 </p>
                 <p className="text-lg text-slate-300 mb-6">
-                  A empresa nasceu da propria experiencia de dificuldade ao montar um primeiro computador, onde faltavam explicacoes claras, transparencia nas vendas e suporte verdadeiro ao cliente.
+                  A empresa nasceu da propria experiencia de dificuldade ao montar um primeiro computador, onde faltavam explicações claras, transparencia nas vendas e suporte verdadeiro ao cliente.
                 </p>
                 <p className="text-lg text-slate-300">
                   Por isso, desde o inicio, a RFComp foi construida com a ideia de fazer diferente: orientar, explicar, testar e garantir que cada cliente compre exatamente o que precisa.
