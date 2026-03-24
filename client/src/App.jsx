@@ -327,7 +327,7 @@ function App() {
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/rfcomp_mascote-removebg-preview_9e2ee7bd.png" 
               alt="Mascote RFComp" 
-              className="h-48 w-auto animate-bounce"
+              className="h-48 w-auto mascote-bounce cursor-pointer"
             />
           </div>
           <div className="max-w-4xl mx-auto">
