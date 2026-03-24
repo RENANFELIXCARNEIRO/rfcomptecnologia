@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx'
 import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink } from 'lucide-react'
 import pc1 from './assets/IMG-20250630-WA0037.jpg'
 import pc2 from './assets/IMG-20250630-WA0039.jpg'
@@ -474,8 +475,86 @@ function App() {
         </div>
       </section>
 
-      {/* Parts Section */}
-      <section id="parts" className="py-16 px-4 bg-slate-900/30">
+      {/* Depoimentos de Clientes */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            O que Nossos Clientes Dizem
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex justify-center">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/avaliação1_cf775ba7.JPG" alt="Avaliação 1" className="w-full max-w-sm h-auto rounded-lg shadow-lg border border-cyan-500/20" />
+            </div>
+            <div className="flex justify-center">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/Avaliação2_71389b92.JPG" alt="Avaliação 2" className="w-full max-w-sm h-auto rounded-lg shadow-lg border border-cyan-500/20" />
+            </div>
+            <div className="flex justify-center">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/Avaliação3_49d2dc01.JPG" alt="Avaliação 3" className="w-full max-w-sm h-auto rounded-lg shadow-lg border border-cyan-500/20" />
+            </div>
+            <div className="flex justify-center">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/Avaliação4_b5266287.JPG" alt="Avaliação 4" className="w-full max-w-sm h-auto rounded-lg shadow-lg border border-cyan-500/20" />
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-slate-400 mb-4">Veja mais avaliações no nosso perfil da OLX</p>
+            <a href="https://www.olx.com.br/perfil/renan-felix-6ab2f56f" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white">
+                Ver Perfil na OLX
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Perguntas Frequentes
+          </h2>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1" className="border-cyan-500/20">
+              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Qual é o prazo de entrega?</AccordionTrigger>
+              <AccordionContent className="text-slate-300">
+                O prazo varia conforme a localização. Para a região de Osasco e Grande São Paulo, geralmente entregamos em 3-5 dias úteis. Para outras regiões do Brasil, o prazo pode variar de 7-15 dias dependendo da transportadora.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2" className="border-cyan-500/20">
+              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Os componentes tém garantia?</AccordionTrigger>
+              <AccordionContent className="text-slate-300">
+                Sim! Todos os componentes vendidos pela RFComp vêm com garantia do fabricante. Processadores, placas-mãe e outros componentes geralmente tém 3 anos de garantia. Oferecemos suporte técnico completo durante todo o período de garantia.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3" className="border-cyan-500/20">
+              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Como funciona a montagem personalizada?</AccordionTrigger>
+              <AccordionContent className="text-slate-300">
+                Você nos informa suas necessidades (uso gamer, trabalho, streaming, etc.), seu orçamento e preferências de marca. Nossos especialistas analisam a compatibilidade de todos os componentes, fazem recomendações e montam seu PC com precisão. Testamos tudo antes da entrega!
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4" className="border-cyan-500/20">
+              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Posso solicitar um orçamento customizado?</AccordionTrigger>
+              <AccordionContent className="text-slate-300">
+                Claro! Entre em contato conosco via WhatsApp, email ou pelo formulário de contato. Descreva suas necessidades e receba um orçamento personalizado com as melhores opções de custo-benefício.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5" className="border-cyan-500/20">
+              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Vocês fazem manutenção e suporte pós-venda?</AccordionTrigger>
+              <AccordionContent className="text-slate-300">
+                Sim! Oferecemos suporte completo após a venda. Pode ser limpeza, atualização de componentes, resolução de problemas ou qualquer dúvida técnica. Estamos sempre disponíveis para ajudar nossos clientes.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6" className="border-cyan-500/20">
+              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Qual é a forma de pagamento?</AccordionTrigger>
+              <AccordionContent className="text-slate-300">
+                Aceitamos transferência bancária, PIX, cartão de crédito e dinheiro (para retirada local em Osasco). Entre em contato para discutir as melhores opções de pagamento para seu caso.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Contato */}
+      <section id="contact" className="py-16 px-4 bg-slate-900/50">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Venda de Peças
@@ -527,6 +606,56 @@ function App() {
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Formulário de Orçamento */}
+      <section className="py-16 px-4 bg-gradient-to-b from-slate-800/50 to-slate-900/50">
+        <div className="container mx-auto max-w-2xl">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Solicite um Orçamento
+          </h2>
+          <Card className="bg-slate-800/80 border-cyan-500/30">
+            <CardContent className="pt-6">
+              <form className="space-y-6">
+                <div>
+                  <label className="block text-cyan-300 font-semibold mb-2">Nome Completo</label>
+                  <input type="text" placeholder="Seu nome" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                </div>
+                <div>
+                  <label className="block text-cyan-300 font-semibold mb-2">Email</label>
+                  <input type="email" placeholder="seu@email.com" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                </div>
+                <div>
+                  <label className="block text-cyan-300 font-semibold mb-2">Telefone/WhatsApp</label>
+                  <input type="tel" placeholder="(11) 9xxxx-xxxx" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                </div>
+                <div>
+                  <label className="block text-cyan-300 font-semibold mb-2">Tipo de Serviço</label>
+                  <select className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white focus:outline-none focus:border-cyan-500">
+                    <option>Selecione um serviço</option>
+                    <option>Montagem de PC Gamer</option>
+                    <option>Compra de Componentes</option>
+                    <option>Consultoria Técnica</option>
+                    <option>Manutenção e Suporte</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-cyan-300 font-semibold mb-2">Descreva sua Necessidade</label>
+                  <textarea placeholder="Conte-nos mais sobre o que você precisa..." rows="4" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500"></textarea>
+                </div>
+                <div>
+                  <label className="block text-cyan-300 font-semibold mb-2">Orçamento Aproximado</label>
+                  <input type="text" placeholder="Ex: R$ 2.000 - R$ 3.000" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                </div>
+                <Button className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-3">
+                  Enviar Orçamento
+                </Button>
+                <p className="text-slate-400 text-sm text-center">Você também pode entrar em contato diretamente via WhatsApp para uma resposta mais rápida!</p>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
