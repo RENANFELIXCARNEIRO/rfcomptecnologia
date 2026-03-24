@@ -329,13 +329,13 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg text-slate-300 mb-6">
-                  A RFComp e uma empresa especializada na venda de computadores e pecas, criada com o objetivo de oferecer produtos de qualidade com preco acessivel e um atendimento realmente diferenciado.
+                  A RFComp é uma empresa especializada na venda de computadores e peças, criada com o objetivo de oferecer produtos de qualidade com preço acessível e um atendimento realmente diferenciado.
                 </p>
                 <p className="text-lg text-slate-300 mb-6">
-                  A empresa nasceu da propria experiencia de dificuldade ao montar um primeiro computador, onde faltavam explicações claras, transparencia nas vendas e suporte verdadeiro ao cliente.
+                  A empresa nasceu da própria experiência de dificuldade ao montar um primeiro computador, onde faltavam explicações claras, transparência nas vendas e suporte verdadeiro ao cliente.
                 </p>
                 <p className="text-lg text-slate-300">
-                  Por isso, desde o inicio, a RFComp foi construida com a ideia de fazer diferente: orientar, explicar, testar e garantir que cada cliente compre exatamente o que precisa.
+                  Por isso, desde o início, a RFComp foi construída com a ideia de fazer diferente: orientar, explicar, testar e garantir que cada cliente compre exatamente o que precisa.
                 </p>
               </div>
               <div className="flex justify-center">
@@ -350,36 +350,36 @@ function App() {
 
           {/* Nossa Historia */}
           <div className="mb-20 bg-slate-800/50 rounded-lg p-8 border border-cyan-500/20">
-            <h3 className="text-3xl font-bold mb-6 text-cyan-400">Nossa Historia</h3>
+            <h3 className="text-3xl font-bold mb-6 text-cyan-400">Nossa História</h3>
             <p className="text-lg text-slate-300 mb-6">
-              A RFComp surgiu da paixao por tecnologia e da vontade de ajudar outras pessoas a montarem seus computadores sem passar pelas mesmas dificuldades que muitos enfrentam no inicio.
+              A RFComp surgiu da paixão por tecnologia e da vontade de ajudar outras pessoas a montarem seus computadores sem passar pelas mesmas dificuldades que muitos enfrentam no início.
             </p>
             <p className="text-lg text-slate-300 mb-6">
-              Antes de entender sobre hardware, foi dificil escolher pecas, confiar nas recomendacoes e ter certeza de que o computador realmente atenderia ao que era necessario.
+              Antes de entender sobre hardware, foi difícil escolher peças, confiar nas recomendações e ter certeza de que o computador realmente atenderia ao que era necessário.
             </p>
             <p className="text-lg text-slate-300 mb-6">
-              Isso motivou a criacao da RFComp, com a proposta de vender com transparencia, explicar de forma simples quando necessario e aprofundar nos detalhes tecnicos quando o cliente ja possui conhecimento.
+              Isso motivou a criação da RFComp, com a proposta de vender com transparência, explicar de forma simples quando necessário e aprofundar nos detalhes técnicos quando o cliente já possui conhecimento.
             </p>
             <p className="text-lg text-slate-300">
-              Com o tempo, a empresa cresceu, passando a atender clientes em todo o Brasil, sempre mantendo o mesmo compromisso: preco justo, qualidade e respeito com cada cliente.
+              Com o tempo, a empresa cresceu, passando a atender clientes em todo o Brasil, sempre mantendo o mesmo compromisso: preço justo, qualidade e respeito com cada cliente.
             </p>
           </div>
 
           {/* Missao, Visao e Valores */}
           <div className="mb-20">
-            <h3 className="text-3xl font-bold mb-12 text-center text-cyan-400">Missao, Visao e Valores</h3>
+            <h3 className="text-3xl font-bold mb-12 text-center text-cyan-400">Missão, Visão e Valores</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Missao */}
               <Card className="bg-slate-800/50 border-cyan-500/30 hover:border-cyan-500/60 transition-colors">
                 <CardHeader>
                   <CardTitle className="text-cyan-400 flex items-center gap-2">
                     <Zap className="w-5 h-5" />
-                    Missao
+                    Missão
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-300">
-                    Oferecer computadores e componentes de qualidade com preco justo, proporcionando um atendimento transparente, personalizado e responsavel, garantindo que cada cliente adquira exatamente o que precisa, com suporte antes e depois da venda.
+                    Oferecer computadores e componentes de qualidade com preço justo, proporcionando um atendimento transparente, personalizado e responsável, garantindo que cada cliente adquira exatamente o que precisa, com suporte antes e depois da venda.
                   </p>
                 </CardContent>
               </Card>
@@ -389,12 +389,12 @@ function App() {
                 <CardHeader>
                   <CardTitle className="text-purple-400 flex items-center gap-2">
                     <Star className="w-5 h-5" />
-                    Visao
+                    Visão
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-300">
-                    Ser reconhecida em todo o Brasil como uma empresa confiavel na venda de computadores e pecas, referencia em atendimento personalizado, transparencia, custo-beneficio e compromisso com a satisfacao do cliente.
+                    Ser reconhecida em todo o Brasil como uma empresa confiável na venda de computadores e peças, referência em atendimento personalizado, transparência, custo-benefício e compromisso com a satisfação do cliente.
                   </p>
                 </CardContent>
               </Card>
@@ -410,10 +410,10 @@ function App() {
                 <CardContent>
                   <ul className="text-slate-300 space-y-2">
                     <li>• Compromisso antes e depois da venda</li>
-                    <li>• Respeito a todos os niveis de conhecimento</li>
+                    <li>• Respeito a todos os níveis de conhecimento</li>
                     <li>• Responsabilidade com o que vendemos</li>
-                    <li>• Paixao por tecnologia</li>
-                    <li>• Compromisso com a satisfacao do cliente</li>
+                    <li>• Paixão por tecnologia</li>
+                    <li>• Compromisso com a satisfação do cliente</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -427,10 +427,10 @@ function App() {
               <div>
                 <h4 className="text-xl font-semibold text-cyan-300 mb-4 flex items-center gap-2">
                   <Monitor className="w-5 h-5" />
-                  Analise Responsavel
+                  Análise Responsável
                 </h4>
                 <p className="text-slate-300">
-                  Na RFComp, cada venda e feita com responsabilidade. Antes de indicar qualquer peca ou computador, analisamos a necessidade do cliente, explicamos de forma clara e, sempre que possivel, mostramos testes reais para garantir que o produto realmente atenda ao que sera utilizado.
+                  Na RFComp, cada venda é feita com responsabilidade. Antes de indicar qualquer peça ou computador, analisamos a necessidade do cliente, explicamos de forma clara e, sempre que possível, mostramos testes reais para garantir que o produto realmente atenda ao que será utilizado.
                 </p>
               </div>
               <div>
@@ -439,16 +439,16 @@ function App() {
                   Atendimento Adaptado
                 </h4>
                 <p className="text-slate-300">
-                  Atendemos desde iniciantes ate usuarios avancados, adaptando o atendimento conforme o nivel de conhecimento, sempre com respeito, paciencia e transparencia.
+                  Atendemos desde iniciantes até usuários avançados, adaptando o atendimento conforme o nível de conhecimento, sempre com respeito, paciência e transparência.
                 </p>
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
                   <Cpu className="w-5 h-5" />
-                  Suporte Continuo
+                  Suporte Contínuo
                 </h4>
                 <p className="text-slate-300">
-                  Nosso compromisso nao termina na venda. Continuamos dando suporte, tirando duvidas e ajudando no que for necessario, porque acreditamos que confianca se constroi com responsabilidade.
+                  Nosso compromisso não termina na venda. Continuamos dando suporte, tirando dúvidas e ajudando no que for necessário, porque acreditamos que confiança se constrói com responsabilidade.
                 </p>
               </div>
               <div>
@@ -457,7 +457,7 @@ function App() {
                   Qualidade Garantida
                 </h4>
                 <p className="text-slate-300">
-                  Utilizamos apenas pecas de qualidade comprovada e das marcas mais renomadas do mercado, garantindo durabilidade, desempenho e estabilidade para suas necessidades.
+                  Utilizamos apenas peças de qualidade comprovada e das marcas mais renomadas do mercado, garantindo durabilidade, desempenho e estabilidade para suas necessidades.
                 </p>
               </div>
             </div>
