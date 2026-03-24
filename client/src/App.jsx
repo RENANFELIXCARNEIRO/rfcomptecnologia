@@ -455,13 +455,37 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 border-t border-cyan-500/20 py-8 px-4">
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <img src={rfcompLogo} alt="RFComp" className="h-8 w-auto" />
+      <footer className="bg-slate-900 border-t border-cyan-500/20 py-12 px-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Logo e Descricao */}
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
+                <img src={rfcompLogo} alt="RFComp" className="h-12 w-auto" />
+              </div>
+              <p className="text-slate-400 text-sm">Tecnologia com Transparencia e Preco Justo</p>
+            </div>
+
+            {/* Informacoes Legais */}
+            <div className="text-center">
+              <h3 className="text-cyan-400 font-semibold mb-3">Empresa</h3>
+              <p className="text-slate-400 text-sm mb-2">RFCOMP TECNOLOGIA LTDA</p>
+              <p className="text-slate-500 text-xs">CNPJ: 35.092.607/0001-23</p>
+            </div>
+
+            {/* Contato */}
+            <div className="text-center md:text-right">
+              <h3 className="text-cyan-400 font-semibold mb-3">Contato</h3>
+              <p className="text-slate-400 text-sm mb-1">(11) 96903-9608</p>
+              <p className="text-slate-400 text-sm">renan.rfcomp@gmail.com</p>
+            </div>
           </div>
-          <p className="text-slate-400 mb-2">© 2024 RFComp. Todos os direitos reservados.</p>
-          <p className="text-slate-500 text-sm">PCs Gamer de Alta Performance - Qualidade e Personalização</p>
+
+          {/* Copyright */}
+          <div className="border-t border-slate-700 pt-6 text-center">
+            <p className="text-slate-400 mb-1">© 2024 RFCOMP TECNOLOGIA LTDA. Todos os direitos reservados.</p>
+            <p className="text-slate-500 text-xs">Osasco, SP</p>
+          </div>
         </div>
       </footer>
     </div>
