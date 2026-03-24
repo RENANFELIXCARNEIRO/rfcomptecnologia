@@ -107,7 +107,7 @@ function App() {
           <div className="mb-8">
             <img src={rfcompLogo} alt="RFComp" className="h-32 w-auto mx-auto mb-6" />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent leading-tight">
             Tecnologia com Transparência e Preço Justo
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
