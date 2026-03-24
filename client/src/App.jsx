@@ -319,37 +319,147 @@ function App() {
       )}
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 bg-slate-900/50">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            Sobre a RFComp
-          </h2>
-          <div className="flex justify-center mb-8">
-            <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/rfcomp_mascote-removebg-preview_9e2ee7bd.png" 
-              alt="Mascote RFComp" 
-              className="h-48 w-auto mascote-bounce cursor-pointer"
-            />
+      <section id="about" className="py-20 px-4 bg-slate-900/50">
+        <div className="container mx-auto">
+          {/* Quem Somos */}
+          <div className="mb-20">
+            <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              Quem Somos
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-lg text-slate-300 mb-6">
+                  A RFComp e uma empresa especializada na venda de computadores e pecas, criada com o objetivo de oferecer produtos de qualidade com preco acessivel e um atendimento realmente diferenciado.
+                </p>
+                <p className="text-lg text-slate-300 mb-6">
+                  A empresa nasceu da propria experiencia de dificuldade ao montar um primeiro computador, onde faltavam explicacoes claras, transparencia nas vendas e suporte verdadeiro ao cliente.
+                </p>
+                <p className="text-lg text-slate-300">
+                  Por isso, desde o inicio, a RFComp foi construida com a ideia de fazer diferente: orientar, explicar, testar e garantir que cada cliente compre exatamente o que precisa.
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/rfcomp_mascote-removebg-preview_9e2ee7bd.png" 
+                  alt="Mascote RFComp" 
+                  className="h-64 w-auto mascote-bounce cursor-pointer"
+                />
+              </div>
+            </div>
           </div>
-          <div className="max-w-4xl mx-auto">
+
+          {/* Nossa Historia */}
+          <div className="mb-20 bg-slate-800/50 rounded-lg p-8 border border-cyan-500/20">
+            <h3 className="text-3xl font-bold mb-6 text-cyan-400">Nossa Historia</h3>
             <p className="text-lg text-slate-300 mb-6">
-              Na busca pela experiência de jogo definitiva, cada componente importa. É por isso que nos dedicamos a montar PCs gamer 
-              que não apenas atendem, mas superam as expectativas dos nossos clientes.
+              A RFComp surgiu da paixao por tecnologia e da vontade de ajudar outras pessoas a montarem seus computadores sem passar pelas mesmas dificuldades que muitos enfrentam no inicio.
             </p>
-            <p className="text-lg text-slate-300 mb-8">
-              Nosso compromisso é com a excelência, utilizando apenas peças de qualidade comprovada e das marcas mais renomadas do mercado, 
-              garantindo durabilidade, desempenho e estabilidade para suas sessões de jogo mais intensas.
+            <p className="text-lg text-slate-300 mb-6">
+              Antes de entender sobre hardware, foi dificil escolher pecas, confiar nas recomendacoes e ter certeza de que o computador realmente atenderia ao que era necessario.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <Badge variant="secondary" className="bg-cyan-500/20 text-cyan-300 border-cyan-500/30">
-                Qualidade Garantida
-              </Badge>
-              <Badge variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
-                Atendimento Personalizado
-              </Badge>
-              <Badge variant="secondary" className="bg-blue-500/20 text-blue-300 border-blue-500/30">
-                Suporte Técnico
-              </Badge>
+            <p className="text-lg text-slate-300 mb-6">
+              Isso motivou a criacao da RFComp, com a proposta de vender com transparencia, explicar de forma simples quando necessario e aprofundar nos detalhes tecnicos quando o cliente ja possui conhecimento.
+            </p>
+            <p className="text-lg text-slate-300">
+              Com o tempo, a empresa cresceu, passando a atender clientes em todo o Brasil, sempre mantendo o mesmo compromisso: preco justo, qualidade e respeito com cada cliente.
+            </p>
+          </div>
+
+          {/* Missao, Visao e Valores */}
+          <div className="mb-20">
+            <h3 className="text-3xl font-bold mb-12 text-center text-cyan-400">Missao, Visao e Valores</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Missao */}
+              <Card className="bg-slate-800/50 border-cyan-500/30 hover:border-cyan-500/60 transition-colors">
+                <CardHeader>
+                  <CardTitle className="text-cyan-400 flex items-center gap-2">
+                    <Zap className="w-5 h-5" />
+                    Missao
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-300">
+                    Oferecer computadores e componentes de qualidade com preco justo, proporcionando um atendimento transparente, personalizado e responsavel, garantindo que cada cliente adquira exatamente o que precisa, com suporte antes e depois da venda.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Visao */}
+              <Card className="bg-slate-800/50 border-purple-500/30 hover:border-purple-500/60 transition-colors">
+                <CardHeader>
+                  <CardTitle className="text-purple-400 flex items-center gap-2">
+                    <Star className="w-5 h-5" />
+                    Visao
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-300">
+                    Ser reconhecida em todo o Brasil como uma empresa confiavel na venda de computadores e pecas, referencia em atendimento personalizado, transparencia, custo-beneficio e compromisso com a satisfacao do cliente.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Valores */}
+              <Card className="bg-slate-800/50 border-blue-500/30 hover:border-blue-500/60 transition-colors">
+                <CardHeader>
+                  <CardTitle className="text-blue-400 flex items-center gap-2">
+                    <Shield className="w-5 h-5" />
+                    Valores
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-slate-300 space-y-2">
+                    <li>• Compromisso antes e depois da venda</li>
+                    <li>• Respeito a todos os niveis de conhecimento</li>
+                    <li>• Responsabilidade com o que vendemos</li>
+                    <li>• Paixao por tecnologia</li>
+                    <li>• Compromisso com a satisfacao do cliente</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Por que escolher a RFComp */}
+          <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-lg p-12 border border-cyan-500/30">
+            <h3 className="text-3xl font-bold mb-8 text-center text-cyan-400">Por que escolher a RFComp</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-xl font-semibold text-cyan-300 mb-4 flex items-center gap-2">
+                  <Monitor className="w-5 h-5" />
+                  Analise Responsavel
+                </h4>
+                <p className="text-slate-300">
+                  Na RFComp, cada venda e feita com responsabilidade. Antes de indicar qualquer peca ou computador, analisamos a necessidade do cliente, explicamos de forma clara e, sempre que possivel, mostramos testes reais para garantir que o produto realmente atenda ao que sera utilizado.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-purple-300 mb-4 flex items-center gap-2">
+                  <Settings className="w-5 h-5" />
+                  Atendimento Adaptado
+                </h4>
+                <p className="text-slate-300">
+                  Atendemos desde iniciantes ate usuarios avancados, adaptando o atendimento conforme o nivel de conhecimento, sempre com respeito, paciencia e transparencia.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
+                  <Cpu className="w-5 h-5" />
+                  Suporte Continuo
+                </h4>
+                <p className="text-slate-300">
+                  Nosso compromisso nao termina na venda. Continuamos dando suporte, tirando duvidas e ajudando no que for necessario, porque acreditamos que confianca se constroi com responsabilidade.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-green-300 mb-4 flex items-center gap-2">
+                  <Package className="w-5 h-5" />
+                  Qualidade Garantida
+                </h4>
+                <p className="text-slate-300">
+                  Utilizamos apenas pecas de qualidade comprovada e das marcas mais renomadas do mercado, garantindo durabilidade, desempenho e estabilidade para suas necessidades.
+                </p>
+              </div>
             </div>
           </div>
         </div>
