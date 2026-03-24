@@ -34,21 +34,21 @@ function App() {
   }
 
   const pcPortfolio = [
-    { id: 1, image: pc1, title: "PC Gamer Intel" },
-    { id: 2, image: pc2, title: "PC Gamer AMD" },
-    { id: 3, image: pc3, title: "Setup Completo" },
-    { id: 4, image: pc4, title: "PC High-End" },
-    { id: 5, image: pc5, title: "Gaming Station" },
-    { id: 6, image: pc6, title: "PC Personalizado" },
-    { id: 7, image: pc7, title: "Setup RGB" },
-    { id: 8, image: pc8, title: "PC Performance" },
-    { id: 9, image: pc9, title: "Gaming Build" },
-    { id: 10, image: pc10, title: "PC Custom" },
-    { id: 11, image: pc11, title: "Setup Gamer" },
-    { id: 12, image: pc12, title: "PC Montado" },
-    { id: 13, image: pc13, title: "Gaming PC" },
-    { id: 14, image: pc14, title: "PC Completo" },
-    { id: 15, image: pc15, title: "Setup Premium" }
+    { id: 1, image: pc1, title: "Pc Gamer Full White" },
+    { id: 2, image: pc2, title: "Pc Gamer Xeon" },
+    { id: 3, image: pc3, title: "Pc Gamer Ryzen 5 Vega 11" },
+    { id: 4, image: pc4, title: "Pc Gamer Ryzen 7 e Rtx 3080" },
+    { id: 5, image: pc5, title: "Pc Gamer AMD" },
+    { id: 6, image: pc6, title: "Pc Gamer Xeon Rtx 3060" },
+    { id: 7, image: pc7, title: "Pc Gamer AM5" },
+    { id: 8, image: pc8, title: "Pc Gamer Mini ITX" },
+    { id: 9, image: pc9, title: "Pc Gamer Am4" },
+    { id: 10, image: pc10, title: "Pc Gamer Lian Li" },
+    { id: 11, image: pc11, title: "Pc Gamer Ryzen 5 + Rx 580" },
+    { id: 12, image: pc12, title: "Pc Gamer The Tower 100" },
+    { id: 13, image: pc13, title: "Pc Gamer Infinity" },
+    { id: 14, image: pc14, title: "Pc Gamer Xeon Full White" },
+    { id: 15, image: pc15, title: "Pc Gamer Intel I7 e RX 570" }
   ]
 
   return (
