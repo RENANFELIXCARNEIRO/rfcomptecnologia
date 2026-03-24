@@ -528,14 +528,21 @@ function App() {
             Entre em Contato
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-slate-800/50 border-cyan-500/20 text-center">
+            <Card className="bg-slate-800/50 border-cyan-500/20 text-center hover:border-cyan-500/60 transition-colors">
               <CardHeader>
                 <Phone className="h-12 w-12 text-cyan-400 mx-auto mb-4" />
                 <CardTitle className="text-cyan-300">Telefone</CardTitle>
               </CardHeader>
-              <CardContent>               
-                <p className="text-slate-300">(11) 96903-9608</p>
-                <p className="text-slate-300">Entre via Whatsapp em contato para orçamentos e dúvidas</p>
+              <CardContent>
+                <a 
+                  href="https://wa.me/5511969039608?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20pre%C3%A7os."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-200 font-semibold transition-colors"
+                >
+                  <p className="text-slate-300 hover:text-cyan-300 transition-colors cursor-pointer">(11) 96903-9608</p>
+                </a>
+                <p className="text-slate-300 text-sm mt-2">Clique para conversar via WhatsApp</p>
               </CardContent>
             </Card>
 
