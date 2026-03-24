@@ -171,7 +171,7 @@ function App() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-slate-300">
-                <p>Processadores, placas-mãe, RAM, SSDs, fontes, coolers e muito mais. Todos os componentes são testados e vem com garantia. Confira nosso catálogo na OLX.</p>
+                <p>Processadores, placas-mãe, RAM, SSDs, fontes, coolers e muito mais. Todos os componentes são testados e vêm com garantia. Confira nosso catálogo na OLX.</p>
               </CardContent>
             </Card>
 
@@ -575,15 +575,15 @@ function App() {
       <footer className="bg-slate-900 border-t border-cyan-500/20 py-12 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {/* Logo e Descricao */}
+            {/* Logo e Descrição */}
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
                 <img src={rfcompLogo} alt="RFComp" className="h-12 w-auto" />
               </div>
-              <p className="text-slate-400 text-sm">Tecnologia com Transparencia e Preco Justo</p>
+              <p className="text-slate-400 text-sm">Tecnologia com Transparência e Preço Justo</p>
             </div>
 
-            {/* Informacoes Legais */}
+            {/* Informações Legais */}
             <div className="text-center">
               <h3 className="text-cyan-400 font-semibold mb-3">Empresa</h3>
               <p className="text-slate-400 text-sm mb-2">RFCOMP TECNOLOGIA LTDA</p>
