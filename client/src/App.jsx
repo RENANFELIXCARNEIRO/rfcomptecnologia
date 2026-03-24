@@ -191,6 +191,15 @@ function App() {
             </Card>
           </div>
 
+          {/* Mascote na seção de serviços */}
+          <div className="flex justify-center mb-16">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/rfcomp_mascote-removebg-preview_9e2ee7bd.png" 
+              alt="Mascote RFComp" 
+              className="h-40 w-auto mascote-bounce cursor-pointer"
+            />
+          </div>
+
           {/* Quality Section */}
           <div className="text-center mb-16">
             <h3 className="text-3xl font-bold mb-8 text-cyan-300">Qualidade e Confiabilidade</h3>
@@ -340,9 +349,9 @@ function App() {
               </div>
               <div className="flex justify-center">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/rfcomp_mascote-removebg-preview_9e2ee7bd.png" 
-                  alt="Mascote RFComp" 
-                  className="h-64 w-auto mascote-bounce cursor-pointer"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68HKDYGGBEmamgzDeX896d/ChatGPTImage19demar.de2026,11_18_21-Editado_00604f4f.png" 
+                  alt="Atendimento RFComp" 
+                  className="w-full max-w-md h-auto"
                 />
               </div>
             </div>
