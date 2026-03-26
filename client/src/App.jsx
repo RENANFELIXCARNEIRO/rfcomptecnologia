@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx'
-import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink, Instagram } from 'lucide-react'
+import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink, Instagram, Copy, Check } from 'lucide-react'
 import pc1 from './assets/IMG-20250630-WA0037.jpg'
 import pc2 from './assets/IMG-20250630-WA0039.jpg'
 import pc3 from './assets/IMG-20250630-WA0040.jpg'
@@ -26,6 +26,13 @@ const rfcompLogo = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663044498456/68H
 function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [selectedImage, setSelectedImage] = useState(null)
+  const [copied, setCopied] = useState(false)
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('renan.rfcomp@gmail.com')
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -685,8 +692,21 @@ function App() {
                 <CardTitle className="text-purple-300">Email</CardTitle>
               </CardHeader>
               <CardContent>                
-                <p className="text-slate-300">renan.rfcomp@gmail.com</p>
-                <p className="text-slate-300">Envie suas especificações e receba um orçamento</p>
+                <div className="flex items-center justify-center gap-2 mb-3">
+                  <p className="text-slate-300">renan.rfcomp@gmail.com</p>
+                  <button
+                    onClick={copyToClipboard}
+                    className="p-2 hover:bg-purple-500/20 rounded-lg transition-colors"
+                    title="Copiar email"
+                  >
+                    {copied ? (
+                      <Check className="h-5 w-5 text-green-400" />
+                    ) : (
+                      <Copy className="h-5 w-5 text-purple-400 hover:text-purple-300" />
+                    )}
+                  </button>
+                </div>
+                <p className="text-slate-300 text-sm">Envie suas especificações e receba um orçamento</p>
               </CardContent>
             </Card>
 
