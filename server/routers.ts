@@ -5,7 +5,6 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { createBudgetRequest, getBudgetRequests, createBlogPost, getBlogPosts, getBlogPostBySlug, trackVisitor, getVisitorStats } from "./db";
 import { notifyOwner } from "./_core/notification";
-import { sendEmail } from "./_core/emailService";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -32,32 +31,32 @@ export const appRouter = router({
         budget: z.string().optional(),
       }))
       .mutation(async ({ input }) => {
-        await createBudgetRequest(input);
-        
-        // Enviar email para o proprietário
-        const emailHtml = `
-          <h2>Nova Solicitação de Orçamento</h2>
-          <p><strong>Nome:</strong> ${input.name}</p>
-          <p><strong>Email:</strong> ${input.email}</p>
-          <p><strong>Telefone:</strong> ${input.phone}</p>
-          <p><strong>Tipo de Serviço:</strong> ${input.serviceType}</p>
-          <p><strong>Descrição:</strong> ${input.description}</p>
-          <p><strong>Orçamento Aproximado:</strong> ${input.budget || 'Não informado'}</p>
-        `;
-        
-        await sendEmail({
-          to: "renan.rfcomp@gmail.com",
-          subject: `Nova Solicitação de Orçamento - ${input.name}`,
-          html: emailHtml,
-        });
-        
-        // Também notificar o proprietário no Manus
-        await notifyOwner({
-          title: "Nova Solicitação de Orçamento",
-          content: `${input.name} (${input.email}) solicitou um orçamento para ${input.serviceType}. Descrição: ${input.description}`,
-        });
-        
-        return { success: true };
+        try {
+          // Salvar no banco de dados
+          await createBudgetRequest(input);
+          
+          // Enviar notificação para o proprietário com todos os detalhes
+          const notificationContent = `
+Nome: ${input.name}
+Email: ${input.email}
+Telefone: ${input.phone}
+Tipo de Serviço: ${input.serviceType}
+Descrição: ${input.description}
+Orçamento Aproximado: ${input.budget || 'Não informado'}
+
+Para responder, entre em contato com ${input.name} em ${input.email} ou ${input.phone}
+          `.trim();
+          
+          await notifyOwner({
+            title: `Nova Solicitação de Orçamento - ${input.name}`,
+            content: notificationContent,
+          });
+          
+          return { success: true };
+        } catch (error) {
+          console.error("[Budget] Erro ao processar orçamento:", error);
+          throw error;
+        }
       }),
     list: publicProcedure.query(() => getBudgetRequests()),
   }),
