@@ -668,12 +668,12 @@ function App() {
               </CardHeader>
               <CardContent>
                 <a 
-                  href="https://wa.me/5511969039608?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20pre%C3%A7os."
+                  href="https://wa.me/5511992304857?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20pre%C3%A7os."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-300 hover:text-cyan-200 font-semibold transition-colors"
                 >
-                  <p className="text-slate-300 hover:text-cyan-300 transition-colors cursor-pointer">(11) 96903-9608</p>
+                  <p className="text-slate-300 hover:text-cyan-300 transition-colors cursor-pointer">(11) 99230-4857</p>
                 </a>
                 <p className="text-slate-300 text-sm mt-2">Clique para conversar via WhatsApp</p>
               </CardContent>
@@ -744,7 +744,7 @@ function App() {
             {/* Contato */}
             <div className="text-center md:text-right">
               <h3 className="text-cyan-400 font-semibold mb-3">Contato</h3>
-              <p className="text-slate-400 text-sm mb-1">(11) 96903-9608</p>
+              <p className="text-slate-400 text-sm mb-1">(11) 99230-4857</p>
               <p className="text-slate-400 text-sm mb-3">renan.rfcomp@gmail.com</p>
               <a 
                 href="https://www.instagram.com/rfcomp.oficial/"
