@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx'
-import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink } from 'lucide-react'
+import { Cpu, Zap, Settings, Shield, Star, Phone, Mail, MapPin, Monitor, Package, ExternalLink, Instagram } from 'lucide-react'
 import pc1 from './assets/IMG-20250630-WA0037.jpg'
 import pc2 from './assets/IMG-20250630-WA0039.jpg'
 import pc3 from './assets/IMG-20250630-WA0040.jpg'
@@ -700,6 +700,24 @@ function App() {
                 <p className="text-slate-300">Atendemos em toda a região</p>
               </CardContent>
             </Card>
+
+            <Card className="bg-slate-800/50 border-pink-500/20 text-center hover:border-pink-500/60 transition-colors">
+              <CardHeader>
+                <Instagram className="h-12 w-12 text-pink-400 mx-auto mb-4" />
+                <CardTitle className="text-pink-300">Instagram</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a 
+                  href="https://www.instagram.com/rfcomp.oficial/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-300 hover:text-pink-200 font-semibold transition-colors"
+                >
+                  <p className="text-slate-300 hover:text-pink-300 transition-colors cursor-pointer">@rfcomp.oficial</p>
+                </a>
+                <p className="text-slate-300 text-sm mt-2">Siga nosso perfil</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -727,7 +745,16 @@ function App() {
             <div className="text-center md:text-right">
               <h3 className="text-cyan-400 font-semibold mb-3">Contato</h3>
               <p className="text-slate-400 text-sm mb-1">(11) 96903-9608</p>
-              <p className="text-slate-400 text-sm">renan.rfcomp@gmail.com</p>
+              <p className="text-slate-400 text-sm mb-3">renan.rfcomp@gmail.com</p>
+              <a 
+                href="https://www.instagram.com/rfcomp.oficial/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 text-pink-400 hover:text-pink-300 transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+                <span className="text-sm">@rfcomp.oficial</span>
+              </a>
             </div>
           </div>
 
