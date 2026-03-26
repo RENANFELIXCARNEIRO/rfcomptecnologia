@@ -519,12 +519,7 @@ function App() {
                 O prazo varia conforme a localização. Para a região de Osasco e Grande São Paulo, geralmente entregamos em 3-5 dias úteis. Para outras regiões do Brasil, o prazo pode variar de 7-15 dias dependendo da transportadora.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-2" className="border-cyan-500/20">
-              <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Os componentes tém garantia?</AccordionTrigger>
-              <AccordionContent className="text-slate-300">
-                Sim! Todos os componentes vendidos pela RFComp vêm com garantia do fabricante. Processadores, placas-mãe e outros componentes geralmente tém 3 anos de garantia. Oferecemos suporte técnico completo durante todo o período de garantia.
-              </AccordionContent>
-            </AccordionItem>
+
             <AccordionItem value="item-3" className="border-cyan-500/20">
               <AccordionTrigger className="text-cyan-300 hover:text-cyan-200">Como funciona a montagem personalizada?</AccordionTrigger>
               <AccordionContent className="text-slate-300">
