@@ -246,7 +246,7 @@ function App() {
                 Compartilhe suas necessidades, orçamento e jogos favoritos, e nós construiremos um PC que atenda precisamente às suas especificações.
               </p>
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('budget')}
                 className="bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white px-8 py-3"
               >
                 Solicite Seu Orçamento
@@ -612,7 +612,7 @@ function App() {
       </section>
 
       {/* Formulário de Orçamento */}
-      <section className="py-16 px-4 bg-gradient-to-b from-slate-800/50 to-slate-900/50">
+      <section id="budget" className="py-16 px-4 bg-gradient-to-b from-slate-800/50 to-slate-900/50">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Solicite um Orçamento
