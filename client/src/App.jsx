@@ -619,22 +619,22 @@ function App() {
           </h2>
           <Card className="bg-slate-800/80 border-cyan-500/30">
             <CardContent className="pt-6">
-              <form className="space-y-6">
+              <form action="https://formspree.io/f/xojpqooz" method="POST" className="space-y-6">
                 <div>
                   <label className="block text-cyan-300 font-semibold mb-2">Nome Completo</label>
-                  <input type="text" placeholder="Seu nome" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                  <input type="text" name="name" placeholder="Seu nome" required className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
                 </div>
                 <div>
                   <label className="block text-cyan-300 font-semibold mb-2">Email</label>
-                  <input type="email" placeholder="seu@email.com" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                  <input type="email" name="email" placeholder="seu@email.com" required className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
                 </div>
                 <div>
                   <label className="block text-cyan-300 font-semibold mb-2">Telefone/WhatsApp</label>
-                  <input type="tel" placeholder="(11) 9xxxx-xxxx" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                  <input type="tel" name="phone" placeholder="(11) 9xxxx-xxxx" required className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
                 </div>
                 <div>
                   <label className="block text-cyan-300 font-semibold mb-2">Tipo de Serviço</label>
-                  <select className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white focus:outline-none focus:border-cyan-500">
+                  <select name="serviceType" required className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white focus:outline-none focus:border-cyan-500">
                     <option>Selecione um serviço</option>
                     <option>Montagem de PC Gamer</option>
                     <option>Compra de Componentes</option>
@@ -645,13 +645,13 @@ function App() {
                 </div>
                 <div>
                   <label className="block text-cyan-300 font-semibold mb-2">Descreva sua Necessidade</label>
-                  <textarea placeholder="Conte-nos mais sobre o que você precisa..." rows="4" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500"></textarea>
+                  <textarea name="description" placeholder="Conte-nos mais sobre o que você precisa..." rows="4" required className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500"></textarea>
                 </div>
                 <div>
                   <label className="block text-cyan-300 font-semibold mb-2">Orçamento Aproximado</label>
-                  <input type="text" placeholder="Ex: R$ 2.000 - R$ 3.000" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
+                  <input type="text" name="budget" placeholder="Ex: R$ 2.000 - R$ 3.000" className="w-full px-4 py-2 bg-slate-700 border border-cyan-500/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500" />
                 </div>
-                <Button className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-3">
+                <Button type="submit" className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-3">
                   Enviar Orçamento
                 </Button>
                 <p className="text-slate-400 text-sm text-center">Você também pode entrar em contato diretamente via WhatsApp para uma resposta mais rápida!</p>
